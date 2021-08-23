@@ -124,8 +124,8 @@ header{
 }
 
   header nav{
-    width: 60%;
-    padding: 10px 0;
+    width: 100%;
+    padding: 50px;
     display:flex;
     justify-content:space-around;
     align-items: center;
@@ -133,7 +133,7 @@ header{
   }
 
   header nav ul {
-    width: 100%;
+    width: 20%;
     display: flex;
     justify-content: space-around;
 }
@@ -265,8 +265,6 @@ article p{
 
 
 
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -355,16 +353,201 @@ article p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles */
+  /*------Base styles-----*/
+  .content-wrapper{
+    max-width:640px;
+    margin: 100px 0;
+
+  }
+  /*header styles*/
+
+  header{
+    justify-content:space-around;
+    padding: 30px;
+
+  }
+
+  header .content-wrapper{
+    width: 100%;
+    margin: 0;
+    justify-content:space-between;
+  }
+    header nav{
+      width:20%;
+      padding: 0;
+    }
+
+    header nav ul {
+      width: 120px;
+      padding: 0px;
+      justify-content: space-between;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.header-divider{
+  display: none;
+  }
+
+
+  /*footer*/
+
+  footer .footer-content{
+    width: 65%;
+    margin: 100px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .contact{
+      margin-bottom: 0;
+    }
+
+footer .copyright{
+  width: 100%;
+
 }
+
+
+
+  /*----tablet styles - home page-----*/
+  /*--hero---*/
+  main {
+    width: 100%;
+  margin: 50px 0;
+  }
+      .hero-area{
+        display:flex;
+        justify-content:space-between;
+          flex-flow:row wrap;
+
+  }
+  /*aside*/
+
+  aside .content-wrapper{
+      margin: 50px 0;
+    display:flex;
+    justify-content:space-between;
+      flex-flow:row wrap;
+  }
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form{
+  width:40%;
+  margin: 0;
+
+}
+  /*features*/
+
+  .features{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+      flex-flow: row;
+
+  }
+
+  .features article{
+    width: 50%;
+    margin: 40px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+      flex-flow:column wrap;
+      flex-basis: 50%;
+  }
+
+  .features-item-description{
+    width: 50%;
+
+
+  }
+
+  /*reviews*/
+
+.reviews{
+  width: 100%;
+
+}
+
+  .reviews article{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+  width: 50%;
+
+  }
+
+  /*about page---*/
+
+  .mission-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mission .content-wrapper h1{
+      width: 100%;
+    }
+.mission-content p{
+  width: 40%;
+}
+
+
+    .contact-section .content-wrapper h1{
+      width: 100%;
+    }
+      .contact-section{
+      display: flex;
+      justify-content: center;
+      align-items:baseline;
+      flex-flow: row wrap;
+    }
+
+    .contact-info{
+      display:flex;
+      justify-content:space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+  /*--faq---*/
+
+  .faq-content{
+    flex-basis: 45%;
+  }
+
+  .faq .content-wrapper{
+    justify-content: space-between;
+  }
+
+  .faq h2, h3{
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles */
+}
+
+
+
+
 
 /* ==========================================================================
    Print styles.
