@@ -98,22 +98,28 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
-
+  color: #e2e3ed;
 }
 
 ul, ol{
   list-style-type: none;
+  font-weight: 800;
+  font-size: 1.25em;
+
 }
 
-h2{
+h1, h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
-h3, h4{
+
+h3, h4, p{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin: 20px 0;
+  font-weight: 500;
 }
 
 p{
@@ -123,7 +129,8 @@ p{
 
 a{
   color: #e2e3ed;
-  text-decoration: none;
+  text-decoration:none;
+
 }
 
 img{
@@ -142,10 +149,39 @@ address{
 .content-wrapper{
   width: 90%;
   margin: 50px 0;
+
 }
 
+aside .form{
+  margin-top: 30px;
+}
 
-/*------Base header - footer styles-----*/
+aside {
+  background-color: #527158;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*------Base header - -----*/
 
 /*header*/
 
@@ -155,18 +191,22 @@ footer{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 /*---header styles----*/
 
 header{
   padding: 15px 0;
+
 }
 
 .header-divider{
   width: 100%;
   height: 1px;
-  padding: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
+  color: #f8f5f5;
+  background: #3a3a3a;
 
 }
 header .content-wrapper{
@@ -196,6 +236,7 @@ header .content-wrapper{
 footer .content-wrapper{
   width: 55%;
   margin: 50px 0;
+
 }
 
   footer .social-icons {
@@ -208,17 +249,24 @@ footer .content-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
+footer h4{
+  text-align:center;
+}
   footer .contact {
     margin-bottom: 50px;
 }
-
+footer address{
+  text-align:center;
+}
 footer p{
   margin: 0;
 }
   footer .copyright{
     margin: 20px 0;
+    text-align:center;
   }
 /*----mobile styles - home page-----*/
 /*--hero---*/
@@ -228,6 +276,7 @@ footer p{
       display:flex;
       justify-content:center;
         flex-flow:row wrap;
+
 }
 /*aside*/
 
@@ -253,7 +302,8 @@ aside{
   justify-content:center;
   align-items: center;
     flex-flow: row wrap;
-}
+    text-align:center;
+ }
 
 .features article{
   width: 65%;
@@ -269,6 +319,8 @@ aside{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #527158;
+
 }
 
 .content-wrapper{
@@ -279,6 +331,11 @@ aside{
 .reviews h3{
   width: 55%;
   margin: 20px 0;
+}
+
+.reviews h2{
+  margin-bottom: 80px;
+  color: #e2e3ed;
 }
 
 article p{
@@ -293,6 +350,7 @@ article p{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
   }
 
   .contact-section {
@@ -300,8 +358,19 @@ article p{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #2a423a;
   }
+ footer{
+   background-color: #202322;
+ }
 
+footer h4{
+  font-size: 1.25em;
+}
+
+footer p{
+  color: #e2e3ed;
+}
   footer{
       flex-flow:column;
     }
@@ -314,6 +383,7 @@ article p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 
 }
 
@@ -327,6 +397,7 @@ article p{
 
 .faq h2{
   margin-bottom: 30px;
+  line-height: 1.25em;
 }
 
 
@@ -336,9 +407,15 @@ margin-bottom: 50px;
 
 footer{
     flex-flow:column;
-    margin: 40px 0 0 0;
   }
 
+  footer .footer-content {
+  width: 55%;
+  margin: 50px 0;
+}
+  .footer-content address{
+   color: #e2e3ed;
+  }
 
 
 /* ==========================================================================
@@ -472,7 +549,7 @@ footer{
 }
 
     footer .footer-content{
-      width: 65%;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -485,10 +562,7 @@ footer{
 
 footer .copyright{
   width: 100%;
-
 }
-
-
 
   /*----tablet styles - home page-----*/
   /*--hero---*/
@@ -496,6 +570,12 @@ footer .copyright{
     width: 100%;
   margin: 0;
   }
+
+  h1{
+    font-size: 3em;
+    line-height: 1em;
+  }
+
 
   /*aside*/
 
@@ -510,7 +590,10 @@ aside .content-wrapper .form-description,
 aside .content-wrapper .form{
   width:40%;
   margin: 0;
+}
 
+aside h3{
+  font-size: 1.5em;
 }
   /*features*/
 
@@ -530,13 +613,15 @@ aside .content-wrapper .form{
     align-items: center;
       flex-flow:column wrap;
       flex-basis: 50%;
-  }
-
+}
   .features-item-description{
     width: 60%;
-
-
   }
+
+  .features h2 {
+    font-size: 2.25em;
+}
+
 
   /*reviews*/
 
@@ -553,6 +638,21 @@ aside .content-wrapper .form{
   width: 52%;
   }
 
+  .reviews h2{
+    font-size: 2.25em;
+    line-height: 1em;
+    width:80%;
+  }
+
+  .reviews h3{
+   font-size: 1.25em;
+   width: 90%;
+ }
+
+footer h4{
+font-size: 1.5em; }
+
+
   /*about page---*/
 
   .mission-content{
@@ -563,16 +663,21 @@ aside .content-wrapper .form{
 
     .mission .content-wrapper h2{
       width: 100%;
+      font-size: 2.25em;
     }
 .mission-content p{
   width: 47%;
 }
-
-
+.contact-section{
+  background-color:
+}
     .contact-section .content-wrapper h2{
       width: 100%;
+      font-size: 2.25em;
     }
-
+.contact-section .content-wrapper h4{
+  font-size: 1.5em;
+}
     .contact-info{
       display:flex;
       justify-content:space-between;
@@ -581,6 +686,7 @@ aside .content-wrapper .form{
     }
 
 footer .footer-content{
+  width: 65%;
   margin: 40px 0;
 }
 
@@ -598,12 +704,18 @@ footer .footer-content{
     width: 100%;
   }
 
+  .faq h2{
+    font-size: 2.25em;
+  }
 
-  footer{
-      flex-flow:column
-    }
+  .faq p{
+    font-size: .875em;
+    line-height: 1.25em;
+  }
 
-
+    footer{
+        flex-flow:column
+      }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
@@ -612,10 +724,15 @@ footer .footer-content{
     max-width:960px;
 }
 
+header{
+  padding: 15px 0;
+}
+
 /*hero*/
 
 .hero-area h1{
   width: 70%;
+  font-size: 3.75em;
 }
 
 /*aside */
@@ -629,14 +746,31 @@ aside .content-wrapper .form{
   width:33%;
 }
 
+aside h3{
+  font-size: 1.875em;
+}
+
+aside p{
+  font-size: 1.125em;
+}
+
+
+
+
 /* features*/
 
 .features h2{
   width:90%;
+  font-size: 2.25em;
+}
+
+.features p{
+  font-size: 1.125em;
+  line-height: 1.33em;
 }
 
 .features article{
-  flex-basis: 30%;
+  flex-basis: 33%;
 }
 
 /*Reviews*/
@@ -645,23 +779,63 @@ aside .content-wrapper .form{
   width: 45%;
 }
 
-  
+.reviews h3{
+  font-size: 1.875em;
+}
+
+.reviews p{
+  font-size: 1.125em;
+}
+
+
+footer h4{
+  font-size: 1.875em
+}
+
+footer p{
+  font-size: 1.125em;
+}
+
+
+
+
 
 /* ABOUT PAGE */
 
-.mission h2,
+.mission{
+  background-color: #527158;
+}
+
+.mission .content-wrapper h2{
+  font-size: 3em;
+}
+
+.mission .content-wrapper p{
+  font-size: 1.125em;
+}
+
 .contact-section .content-wrapper h2{
   width: 100%;
+  font-size: 3em;
 }
 
+.contact-section .content-wrapper h4{
+  font-size: 1.875em;
+}
 
-/* FAQ*/
+.contact-section .content-wrapper p{
+  font-size: 1.125em;
+}
+
+/* faq */
 
 .faq h2{
-  width: 100%;
+  font-size: 3em;
 }
 
-
+.faq p{
+  font-size: 1.125em;
+  line-height: 1.2em;
 
 /* ==========================================================================
    Print styles.
