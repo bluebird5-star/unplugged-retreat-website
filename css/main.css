@@ -134,11 +134,12 @@ a{
 }
 
 img{
-
+  width: 100%;
 }
 
-figure{
 
+figure{
+  margin: 0;
 }
 
 address{
@@ -181,6 +182,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
+
 /*------Base header - -----*/
 
 /*header*/
@@ -200,7 +202,14 @@ header{
   padding: 15px 0;
 
 }
-
+/* header-logo---*/
+header figure{
+  width: 65%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow: row wrap;
+}
 .header-divider{
   width: 100%;
   height: 1px;
@@ -269,13 +278,25 @@ footer p{
     text-align:center;
   }
 /*----mobile styles - home page-----*/
+
 /*--hero---*/
 
-
-    .hero-area{
+    .hero-area {
+      background: url('../img/jake-melara-30679-unsplash2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat:no-repeat;
+      background-color: #333;
+      min-height: 500px;
       display:flex;
       justify-content:center;
-        flex-flow:row wrap;
+      flex-flow:row wrap;
+}
+
+.hero-area h1{
+  font-size: 2em;
+  line-height: 1.2;
+  margin-top: 0;
 
 }
 /*aside*/
@@ -288,10 +309,17 @@ aside{
 }
 
 /*features*/
+
 .features {
-  display:flex;
-  justify-content:center;
-    flex-flow: row wrap;
+    background: url('../img/rawpixel-800820-unsplash1_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: #333;
+    min-height: 1300px;
+    display:flex;
+    justify-content:center;
+      flex-flow:row wrap;
 }
 
 .features h2{
@@ -315,12 +343,18 @@ aside{
 
 /*reviews*/
 
+.reviews figure{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow: row wrap;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   background-color: #527158;
-
 }
 
 .content-wrapper{
@@ -345,6 +379,7 @@ article p{
 
 /*about page---*/
 
+
 .mission {
     display: flex;
     justify-content: center;
@@ -360,6 +395,7 @@ article p{
     flex-flow: row wrap;
     background: #2a423a;
   }
+
  footer{
    background-color: #202322;
  }
@@ -377,6 +413,8 @@ footer p{
 
 
 /*--faq---*/
+
+
 
 .faq{
   display: flex;
@@ -516,6 +554,14 @@ footer{
   }
   /*header styles*/
 
+  header figure{
+    width: 30%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow: row wrap;
+  }
+
   header{
     justify-content:space-around;
     padding: 30px;
@@ -571,11 +617,25 @@ footer .copyright{
   margin: 0;
   }
 
+  .hero-area {
+    background: url('../img/jake-melara-30679-unsplash2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: #333;
+    min-height: 600px;
+    display:flex;
+    justify-content:center;
+      flex-flow:row wrap;
+  }
+
   h1{
     font-size: 3em;
     line-height: 1em;
   }
-
+.hero-area .content-wrapper{
+  margin-top: 20px;
+}
 
   /*aside*/
 
@@ -597,11 +657,18 @@ aside h3{
 }
   /*features*/
 
-  .features{
-    width: 100%;
-    display:flex;
-    justify-content:center;
-      flex-flow: row;
+
+  .features {
+      background: url('../img/rawpixel-800820-unsplash1_2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat:no-repeat;
+      background-color: #333;
+      min-height: 860px;
+      display:flex;
+      justify-content:center;
+        flex-flow:row;
+        width: 100%;
 
   }
 
@@ -629,6 +696,13 @@ aside h3{
   width: 100%;
 }
 
+.reviews figure{
+  width: 45%;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-flow:nowrap;
+}
   .reviews article{
     display: flex;
     justify-content: space-between;
@@ -728,11 +802,33 @@ header{
   padding: 15px 0;
 }
 
+header figure{
+  width: 25%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow: row wrap;
+}
+
 /*hero*/
+
+.hero-area {
+  background: url('../img/jake-melara-30679-unsplash2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-color: #333;
+  min-height: 600px;
+  display:flex;
+  justify-content:center;
+    flex-flow:row wrap;
+}
+
 
 .hero-area h1{
   width: 70%;
   font-size: 3.75em;
+  margin-top: 20px;
 }
 
 /*aside */
@@ -759,6 +855,20 @@ aside p{
 
 /* features*/
 
+.features {
+    background: url('../img/rawpixel-800820-unsplash1_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: #333;
+    min-height: 800px;
+    display:flex;
+    justify-content:center;
+      flex-flow:row;
+      width: 100%;
+
+}
+
 .features h2{
   width:90%;
   font-size: 2.25em;
@@ -779,12 +889,20 @@ aside p{
   width: 45%;
 }
 
+.reviews figure{
+  width: 50%;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-flow:nowrap;
+}
+
 .reviews h3{
   font-size: 1.875em;
 }
 
 .reviews p{
-  font-size: 1.125em;
+  font-size: 1.25em;
 }
 
 
