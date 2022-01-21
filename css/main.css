@@ -757,6 +757,24 @@ font-size: 1.5em; }
 .mission-content p{
   width: 47%;
 }
+
+.map figure{
+  width: 100%;
+  height:0;
+  padding-bottom: 45%;
+  overflow: hidden;
+  position:relative;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+
 .contact-section{
   background-color:
 }
@@ -946,6 +964,25 @@ footer p{
 .mission .content-wrapper p{
   font-size: 1.125em;
 }
+
+
+.map figure{
+  width: 100%;
+  height:0;
+  padding-bottom:37%;
+  overflow: hidden;
+  position:relative;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+
 
 .contact-section .content-wrapper h2{
   width: 100%;
