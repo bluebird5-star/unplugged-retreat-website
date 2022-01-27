@@ -242,22 +242,34 @@ header .content-wrapper{
 /*footer*/
 
 
-footer .content-wrapper{
-  width: 55%;
+footer .content-wrapper .footer-content{
+  width: 100%;
   margin: 50px 0;
+  align-items: center;
+
 
 }
-
   footer .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
   }
 
   footer .social-icons p{
     display: flex;
     justify-content: center;
-    align-items: center;
+text-align: center;
+  }
+
+  footer .social-icons i{
+  font-size: 1.25em;
+padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #527158;
 
   }
 
@@ -358,12 +370,12 @@ aside{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #527158;
+  background-color: #2a423a;
 }
 
 .content-wrapper{
   width: 90%;
-  margin: 50px, 0;
+  margin-top: 10px;
 }
 
 .reviews h3{
@@ -372,7 +384,7 @@ aside{
 }
 
 .reviews h2{
-  margin-bottom: 80px;
+  margin-bottom: 50px 0;
   color: #e2e3ed;
 }
 
@@ -648,12 +660,12 @@ footer .copyright{
       flex-flow:row wrap;
   }
 
-  h1{
+  .hero-area h1{
     font-size: 3em;
     line-height: 1em;
   }
 .hero-area .content-wrapper{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
   /*aside*/
@@ -745,6 +757,13 @@ aside h3{
 footer h4{
 font-size: 1.5em; }
 
+footer .content-wrapper .footer-content{
+  width: 100%;
+}
+
+footer .social-icons i{
+  margin: 0 20px;
+}
 
   /*about page---*/
 
@@ -825,14 +844,16 @@ footer .footer-content{
   }
 
     footer{
-        flex-flow:column
+        flex-flow: column;
       }
+}
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
   /*------Base styles-----*/
+
   .content-wrapper{
-    max-width:960px;
+    max-width: 960px;
 }
 
 header{
